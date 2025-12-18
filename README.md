@@ -39,7 +39,7 @@ gemini extension uninstall https://github.com/samucodesh/geminicli-gitcommit
 
 ## Resources
 
-- **Troubleshooting:** If you encounter issues with the CLI, visit the [Troubleshooting Guide](https://github.com/google-gemini/gemini-cli/blob/main/docs/troubleshooting.md).
+- **Troubleshooting:** If you encounter issues with the Gemini CLI, visit the [Troubleshooting Guide](https://github.com/google-gemini/gemini-cli/blob/main/docs/troubleshooting.md).
 - **FAQ:** Check the [Gemini CLI FAQ](https://github.com/google-gemini/gemini-cli/blob/main/docs/faq.md) for common questions.
 
 ## License
