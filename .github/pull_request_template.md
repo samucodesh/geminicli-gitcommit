@@ -1,13 +1,4 @@
----
-name: Pull Request
-about: Propose changes to the repository
-title: ''
-labels: ''
-assignees: ''
-
----
-
-## Summary
+# Summary
 
 A brief explanation of what was changed and why.
 
