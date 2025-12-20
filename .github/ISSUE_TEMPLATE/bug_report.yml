@@ -1,6 +1,6 @@
 name: 🐛 Bug Report
 description: Create a report to help us improve the Gemini CLI extension
-title: "[Bug:]: "
+title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
