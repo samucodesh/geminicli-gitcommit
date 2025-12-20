@@ -10,7 +10,7 @@ body:
     id: problem-statement
     attributes:
       label: Problem Statement
-      description: A clear description of the pain point.
+      description: What problem are you facing and why is it important? Please be as specific as possible.
       placeholder: "e.g., I'm always frustrated when..."
     validations:
       required: true
@@ -18,7 +18,7 @@ body:
     id: proposed-solution
     attributes:
       label: Proposed Solution
-      description: A detailed description of what you want to happen.
+      description: How do you envision this feature working? If you have a specific implementation in mind, please describe it in detail.
     validations:
       required: true
   - type: textarea
