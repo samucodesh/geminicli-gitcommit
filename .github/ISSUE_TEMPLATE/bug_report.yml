@@ -1,0 +1,63 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve the Gemini CLI extension
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: The command /git:commit failed when...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Stage files with 'git add .'
+        3. Run command '/git:commit'
+        4. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: gemini_version
+    attributes:
+      label: Gemini CLI Version
+      description: Run `gemini --version` to see your version.
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: git_version
+    attributes:
+      label: Git Version
+      description: Run `git --version` to see your version.
+      placeholder: git version 2.34.1
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs / Output
+      description: Please copy and paste any relevant terminal output or error logs.
+      render: shell
+    validations:
+      required: true
