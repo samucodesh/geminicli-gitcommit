@@ -1,4 +1,4 @@
-# In: .gemini/commands/git/commit.toml
+# In: commands/git/commit.toml
 # Invoked via: /git:commit
 
 description = "Generates a Git commit message (title and body) based on staged changes."
@@ -49,6 +49,7 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
     *   Write in the **imperative mood** (e.g., "add", "fix", "change" not "added", "fixed").
     *   Begin with a lowercase letter.
     *   Do not end with a period.
+    *   **CRITICAL: Never include backticks (`) in the output.**
     </subject>
 
     <body_formatting>
@@ -56,6 +57,7 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
     *   Explain the **intent** and **reasoning**. Answer "why" you are making the change, not just "what" you changed.
     *   **Lists:** If the commit includes multiple distinct logical changes, use a bulleted list (using `-`) to detail them for better readability.
     *   Wrap the body at 72 characters per line.
+    *   **CRITICAL: Never include backticks (`) in the output. Use single quotes (') instead if needed.**
     </body_formatting>
 
     <breaking_changes>
