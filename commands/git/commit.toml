@@ -54,6 +54,7 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
     </subject>
 
     <body_formatting>
+    *   Separate from the subject with a blank line.
     *   Explain the **intent** and **reasoning**. Answer "why" you are making the change, not just "what" you changed.
     *   **Lists:** If the commit includes multiple distinct logical changes, use a bulleted list (using `-`) to detail them for better readability.
     *   Wrap the body at 72 characters per line.
@@ -78,5 +79,6 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
 ```diff
 !{git diff --staged}
 ```
+</changes>
 
 """
