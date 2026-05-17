@@ -1,7 +1,7 @@
 # In: commands/git/commit.toml
 # Invoked via: /git:commit
 
-description = "Generates a Git commit message (title and body) based on staged changes."
+description = "Generates a Git commit message based on staged changes and automatically executes the commit."
 
 # The prompt uses !{...} to execute the command and inject its output.
 # It explicitly tells the model to act like our expert conventional-commit prompt.
@@ -12,7 +12,7 @@ You are an expert Senior Software Engineer and a maintainer of large-scale open-
 </role>
 
 <task>
-Analyze the provided code changes (`git diff`) and generate a complete commit message, consisting of a subject and a body. The generated message should be suitable for direct use with `git commit -m "subject\n\nbody"`.
+Analyze the provided code changes (`git diff`) and generate a complete commit message, consisting of a subject and a body. Then, **automatically execute** the `git commit` command using the `run_shell_command` tool.
 </task>
 
 <instructions>
@@ -50,14 +50,15 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
     *   Begin with a lowercase letter.
     *   Do not end with a period.
     *   **CRITICAL: Never include backticks (`) in the output.**
+    *   **CRITICAL: Never include double quotes (") in the output. Use single quotes (') instead to prevent breaking the shell command.**
     </subject>
 
     <body_formatting>
-    *   Separate from the subject with a blank line.
     *   Explain the **intent** and **reasoning**. Answer "why" you are making the change, not just "what" you changed.
     *   **Lists:** If the commit includes multiple distinct logical changes, use a bulleted list (using `-`) to detail them for better readability.
     *   Wrap the body at 72 characters per line.
     *   **CRITICAL: Never include backticks (`) in the output. Use single quotes (') instead if needed.**
+    *   **CRITICAL: Never include double quotes (") in the output. Use single quotes (') instead to prevent truncating the commit message.**
     </body_formatting>
 
     <breaking_changes>
@@ -77,14 +78,5 @@ Analyze the provided code changes (`git diff`) and generate a complete commit me
 ```diff
 !{git diff --staged}
 ```
-</changes>
-
-<output>
-Run this command:
-
-git commit -m "<subject>\n\n
-<body>
-"
-</output>
 
 """
