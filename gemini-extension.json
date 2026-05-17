@@ -1,8 +1,5 @@
 {
-    "name": "geminicli-gitcommit",
-    "version": "0.2.0",
-    "excludeTools": [],
-    "tools": ["list_directory", "search_file_content", "read_file", "glob", "replace", "run_shell_command", "save_memory"],
-    "model": "flash",
-    "temperature" : 0.0
-  }
+  "name": "geminicli-gitcommit",
+  "version": "0.3.0",
+  "excludeTools": []
+}

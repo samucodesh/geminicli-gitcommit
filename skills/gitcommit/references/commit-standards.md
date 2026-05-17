@@ -31,6 +31,7 @@
 *   Use **imperative mood** (e.g., "add", "fix", "change").
 *   Lowercase start, no trailing period.
 *   **NO BACKTICKS**: Never use backticks (`) in the subject.
+*   **NO DOUBLE QUOTES**: Never use double quotes (") in the subject. Use single quotes (') instead.
 
 ## Body Formatting
 *   Blank line after subject.
@@ -38,6 +39,7 @@
 *   Use bulleted lists (`-`) for multiple distinct changes.
 *   Wrap at 72 characters.
 *   **NO BACKTICKS**: Never use backticks (`) in the body. Use single quotes (') instead if needed.
+*   **NO DOUBLE QUOTES**: Never use double quotes (") in the body. Use single quotes (') instead to prevent command truncation.
 
 ## Breaking Changes
 *   **Detection:** Look for removal of public API, signature changes, or incompatible config changes.

@@ -1,5 +1,5 @@
 ---
-name: git-commit
+name: skill-git-commit
 description: Expert Git commit message generation following Conventional Commits. Use when the user wants to commit changes, needs help writing a commit message, or asks to "commit this".
 ---
 
