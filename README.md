@@ -7,7 +7,7 @@ descriptive body to keep your project history clear and concise.
 ## Features
 
 - **Conventional Commits:** Automatically generates messages following the industry-standard [Conventional Commits](https://www.conventionalcommits.org/) specification.
-- **Safety First (No Backticks):** Guarantees output without backticks (`), preventing the Gemini CLI from incorrectly identifying messages as bash commands.
+- **Safety First:** Guarantees output without backticks (`) or double quotes ("), preventing CLI execution errors and ensuring commit message integrity.
 - **Context Awareness:** Automatically activates when you ask to "commit this," "write a commit message," or similar requests.
 - **Automated Analysis:** Inspects your Git staging area to understand code changes and provide meaningful context.
 - **Seamless Integration:** Adds both an Agent Skill and a custom command directly into your Gemini CLI workflow.
